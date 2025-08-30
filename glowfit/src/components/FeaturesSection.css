@@ -1,0 +1,140 @@
+/* Features Section Styles */
+.features-section {
+  background-color: rgb(221, 197, 228);
+  padding: 80px 0;
+  min-height: 100vh;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.features-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(84, 5, 121);
+  margin-bottom: 15px;
+}
+
+.features-subtitle {
+  font-size: 1.2rem;
+  color: rgb(84, 5, 121);
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(84, 5, 121, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid rgb(221, 197, 228);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(84, 5, 121, 0.25);
+  border-color: rgb(84, 5, 121);
+}
+
+.feature-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-image {
+  transform: scale(1.05);
+}
+
+
+.feature-content {
+  padding: 30px;
+}
+
+.feature-content .feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(84, 5, 121);
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  color: rgb(84, 5, 121);
+  line-height: 1.6;
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-section {
+    padding: 60px 20px;
+  }
+  
+  .features-title {
+    font-size: 2rem;
+  }
+  
+  .features-subtitle {
+    font-size: 1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .feature-image-container {
+    height: 200px;
+  }
+  
+  .feature-content {
+    padding: 25px;
+  }
+  
+  .stats-section {
+    padding: 30px 20px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+
+}

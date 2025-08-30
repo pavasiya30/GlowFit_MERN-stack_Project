@@ -1,0 +1,108 @@
+/* src/components/HeroSection.css */
+
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+
+  background-image: url('../assets/yoga1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 40px 0 20px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  opacity: 0.9;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  margin-bottom: 30px;
+}
+
+.hero-button-container {
+  margin-top: 20px;
+}
+
+.hero-button {
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #dc3545;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #c82333;
+}
+/* src/components/HeroSection.css */
+
+.hero-container {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  text-align: center;
+
+  background-image: url('../assets/yoga1.jpg');
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 40px 0 20px 0;
+  color: rgb(84, 5, 121);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  color:rgb(84, 5, 121);
+  opacity: 0.6;
+  /* text-shadow: 1px 1px 3px rgba(0,0,0,0.6); */
+  margin-bottom: 30px;
+}
+
+.hero-button-container {
+  margin-top: 20px;
+}
+
+.hero-button {
+  border-radius: 30px;
+  width: 250px;
+  height: 50px;
+  font-weight: bold;
+  background-color: #e35a45;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  animation: fadeInUp 1s ease-in-out 1s;
+}
+
+.hero-button:hover {
+  background-color: #da523d;
+  cursor: pointer;
+}

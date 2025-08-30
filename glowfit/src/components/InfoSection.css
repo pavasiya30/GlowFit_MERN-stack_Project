@@ -1,0 +1,178 @@
+/* src/components/InfoSection.css */
+
+.info-section {
+  padding: 50px 20px;
+  background-color: rgb(221, 197, 228);
+  color: rgb(84, 5, 121);
+}
+
+.left_section {
+  padding-top: 150px;
+  /* padding-left: 100px; */
+}
+
+.left_section h1 {
+  text-align: center;
+  padding-left: 40px;
+  opacity: 0.7;
+  width: 500px;
+  font-weight: bolder;
+}
+
+.left_section p {
+  font-size: 18px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  opacity: 0.7;
+  padding: 10px 60px 10px 0px;
+  /* padding-left: 20px; */
+  color: black;
+}
+
+/* Right Section Styling */
+.right_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.square_block {
+  width: calc(50% - 12px);
+  height: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.square_block:hover {
+  background-color: rgb(84, 5, 121);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.square_block img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.square_block h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.square_block p {
+  font-size: 16px;
+  color: #a9a2a2;
+}
+
+.btn11 {
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  font-weight: bold;
+  background-color: rgb(84, 5, 121);
+  font-size: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn11:hover {
+  background-color: rgb(84, 5, 121);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .left_section {
+    padding-top: 100px;
+  }
+
+  .left_section h1 {
+    font-size: 28px;
+  }
+
+  .right_section {
+    justify-content: center;
+  }
+
+  .square_block {
+    width: 45%;
+  }
+
+  .btn11 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .left_section h1 {
+    width: 250px;
+    font-size: 24px;
+  }
+
+  .right_section {
+    justify-content: center;
+  }
+
+  .square_block {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .btn11 {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left_section h1 {
+    font-size: 22px;
+  }
+
+  .square_block {
+    width: 100%;
+  }
+
+  .btn11 {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+}
+.heading-text {
+  padding-left: 40px;
+  text-align: left;
+  font-weight: bolder;
+  width: 100%;
+  max-width: 500px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.paragraph-text {
+  padding-left: 40px;
+  width: 100%;
+  max-width: 600px;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  text-align: left;
+  padding:  30px 0 0 90px;
+}

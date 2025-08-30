@@ -1,0 +1,386 @@
+.member-showcase-section {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, rgba(84, 5, 121, 0.05), rgba(221, 197, 228, 0.1));
+  padding: 0px 20px 40px 20px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #540579;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(84,5,121,0.2);
+}
+
+/* Testimonials */
+.testimonial-text {
+  font-size: 1.1rem;
+  color: #444;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.testimonial-text:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.carousel-caption {
+  color: #540579;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  transition: margin-top 0.3s ease;
+}
+
+.carousel_div.edit-mode + .carousel-caption {
+  margin-top: 10px;
+}
+
+.testimonial-author {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-initial {
+  background: linear-gradient(135deg, #540579, #7a0da3);
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-weight: 700;
+  border: none;
+  margin-top: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-initial:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 18px rgba(122,13,163,0.4);
+}
+
+/* Learn Section */
+.learn-section {
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  margin-top: 50px;
+}
+
+.learn-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(84, 5, 121);
+  margin-bottom: 25px;
+  text-shadow: 0 2px 6px rgba(84,5,121,0.2);
+  padding: 5% 0 5% 15%
+}
+
+.learn-desc {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+  max-width: 650px;
+  padding-left: 50px;
+}
+
+/* Teacher Images Section */
+.teacher-imgs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.img-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teacher-face,
+.btn-more-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #e0d4f1; /* elegant light border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #540579, #7a0da3);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+}
+
+.teacher-face:hover,
+.btn-more-circle:hover {
+  transform: scale(1.2) rotate(-3deg);
+  box-shadow: 0 12px 28px rgba(122,13,163,0.35);
+  border-color: #c9b6e3;
+  background: linear-gradient(135deg, #7a0da3, #540579);
+}
+
+.btn-more-circle {
+  font-size: 0.95rem;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* Carousel Controls Styling */
+.carousel-control-prev,
+.carousel-control-next {
+  /* background-color: rgba(84, 5, 121, 0.8); */
+  /* border-radius: 50%; */
+  width: 50px;
+  height: 50px;
+  margin: auto 20px;
+  opacity: 0.9;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  /* background-color: rgb(84, 5, 121); */
+  opacity: 1;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators button {
+  background-color: rgb(84, 5, 121);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+  background-color: rgb(221, 197, 228);
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .teacher-face,
+  .btn-more-circle {
+    width: 95px;
+    height: 95px;
+  }
+
+  .learn-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .teacher-face,
+  .btn-more-circle {
+    width: 85px;
+    height: 85px;
+  }
+
+  .learn-desc {
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: 2.2rem;
+  }
+
+  .carousel_div.edit-mode {
+    height: 450px;
+  }
+
+  .edit-review-form {
+    padding: 15px;
+    margin: 8px;
+  }
+
+  .review-textarea {
+    min-height: 50px;
+    max-height: 100px;
+  }
+}
+
+/* Loading Message */
+.loading-message {
+  text-align: center;
+  padding: 40px;
+  color: rgb(84, 5, 121);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Review Actions in Carousel */
+.review-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 16px;
+  border: 2px solid rgb(84, 5, 121);
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(84, 5, 121);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(84, 5, 121, 0.2);
+}
+
+.edit-btn:hover {
+  background-color: rgb(84, 5, 121);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(84, 5, 121, 0.3);
+}
+
+.delete-btn {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+/* Edit Review Form */
+.edit-review-form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(84, 5, 121, 0.1);
+  border: 2px solid rgb(84, 5, 121);
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.edit-review-form .form-group {
+  margin-bottom: 12px;
+}
+
+.edit-review-form label {
+  display: block;
+  color: rgb(84, 5, 121);
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.rating-select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid rgb(84, 5, 121);
+  border-radius: 8px;
+  background-color: white;
+  color: rgb(84, 5, 121);
+  font-size: 0.9rem;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid rgb(84, 5, 121);
+  border-radius: 8px;
+  background-color: white;
+  color: rgb(84, 5, 121);
+  font-size: 0.9rem;
+  resize: vertical;
+  min-height: 60px;
+  max-height: 120px;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.save-btn {
+  background-color: rgb(84, 5, 121);
+  color: white;
+  border: 2px solid rgb(84, 5, 121);
+}
+
+.save-btn:hover {
+  background-color: rgb(221, 197, 228);
+  color: rgb(84, 5, 121);
+}
+
+.cancel-btn {
+  background-color: white;
+  color: rgb(84, 5, 121);
+  border: 2px solid rgb(84, 5, 121);
+}
+
+.cancel-btn:hover {
+  background-color: rgb(221, 197, 228);
+  color: rgb(84, 5, 121);
+}
+
+/* Review Text and Rating */
+.review-text {
+  font-size: 1.2rem;
+  color: rgb(84, 5, 121);
+  line-height: 1.7;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.review-rating {
+  font-size: 1.3rem;
+  color: rgb(84, 5, 121);
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgba(221, 197, 228, 0.3);
+  border-radius: 10px;
+  margin: 0 20px 15px 20px;
+}

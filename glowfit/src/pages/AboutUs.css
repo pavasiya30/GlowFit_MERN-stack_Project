@@ -1,0 +1,201 @@
+/* =========================
+   HERO SECTION
+========================= */
+.about-page .hero-section {
+  background: linear-gradient(135deg, rgb(84, 5, 121), rgb(221, 197, 228));
+  /* color: white; */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+}
+.about-page .hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.about-page .hero-section p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* =========================
+   MISSION SECTION
+========================= */
+.about-page .mission-section h2 {
+  color: rgb(84, 5, 121);
+  font-weight: 700;
+}
+.about-page .mission-section p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* =========================
+   WHY CHOOSE GLOWFIT
+========================= */
+.about-page .why-choose {
+  background-color: rgb(221, 197, 228);
+  padding: 80px 20px;
+  border-radius: 30px;
+}
+.about-page .why-choose h2 {
+  color: rgb(84, 5, 121);
+  font-weight: 800;
+}
+.about-page .why-choose .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+.about-page .why-choose .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+.about-page .why-choose .card h3 {
+  color: rgb(84, 5, 121);
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CALL TO ACTION SECTION
+========================= */
+.yoga-promo {
+  background:rgb(221, 197, 228);
+  /* color: white; */
+  padding: 60px 30px;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+.promo-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(84, 5, 121),;
+}
+.promo-subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: rgb(84, 5, 121),;
+}
+.promo-image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+.cta-button {
+  background-color: white;
+  color: rgb(84, 5, 121);
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background-color: rgb(221, 197, 228);
+  color: rgb(84, 5, 121);
+}
+.cta-text {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   IMAGE SCROLL CONTAINER
+========================= */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  height: 100%;
+  gap: 20px;
+  padding: 65px 20px 20px;
+  scroll-snap-type: x mandatory;
+}
+.scroll-container img {
+  flex-shrink: 0;
+  height: 850px;
+  width: auto;
+  object-fit: cover;
+  scroll-snap-align: center;
+  border-radius: 15px;
+}
+
+/* =========================
+   PRICING SECTION
+========================= */
+.price-header {
+  padding: 30px 20px;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+}
+.price-header.standard {
+  background-color: white;
+  color: rgb(84, 5, 121),;
+}
+.price-sub {
+  font-size: 18px;
+  font-weight: 400;
+}
+.button2 {
+  padding: 10px 25px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rgb(84, 5, 121);
+  border: 2px solid rgb(84, 5, 121);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.button2:hover {
+  background-color: rgb(221, 197, 228);
+  color: rgb(84, 5, 121);
+}
+.standard-btn {
+  background-color: rgb(84, 5, 121);
+  /* color: white; */
+}
+
+/* =========================
+   TITLES
+========================= */
+.highlight-title {
+  color: rgb(84, 5, 121);
+  font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: #f8f8f8;
+  padding: 40px 20px;
+  border-top: 3px solid rgb(84, 5, 121);
+}
+.footer a {
+  display: block;
+  color: black;
+  margin: 5px 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: rgb(84, 5, 121);
+}
+.footer .social-icon {
+  font-size: 22px;
+  margin: 0 8px;
+  color: rgb(84, 5, 121);
+  transition: 0.3s;
+}
+.footer .social-icon:hover {
+  color: rgb(221, 197, 228);
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
